@@ -1,8 +1,3 @@
-import java.awt.*;
-import java.applet.*;
-import java.awt.event.*;
-import java.text.*;
-
 public class NeuronalesNetz
 {
 	private int anzahlEingangsneuronen = 0;
@@ -24,7 +19,7 @@ public class NeuronalesNetz
 		ausgangsWert = new double[anzahlAusgangsneuronen];
 		eingangsWert = new double[anzahlEingangsneuronen];
 		
-		// Gewichtmatrix mit Zufallswerten füllen
+		// Gewichtmatrix mit Zufallswerten fÃ¼llen
 		for( int i=0; i<anzahlAusgangsneuronen; i++ ){
 			for( int j=0; j<anzahlEingangsneuronen; j++ ){
 				gewicht[i][j] = Math.random()*.2+.1;
@@ -66,7 +61,7 @@ public class NeuronalesNetz
 		// Abklingkonstante
 		double d   = 0.5;	
 		
-		// Ruhewert der Aktivität
+		// Ruhewert der AktivitÃ¤t
 		double c0  = 0.5;
 		
 		// Schwelle
